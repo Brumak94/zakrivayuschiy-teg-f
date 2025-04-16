@@ -23,10 +23,10 @@
       href="./images/apple-touch-icon.png"
     />
     <meta name="apple-mobile-web-app-title" content="PatHTML" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="./images/site.webmanifest" />
   </head>
   <body class="page">
-    <header class="header page-size header-margin">
+    <header class="header page-size">
       <a class="header__logo" href="#0">&lt;/HTML&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
     </header>
@@ -37,11 +37,14 @@
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
           <div class="card__image-container">
-            <span class="card__image-label stroke">&lt;/HTML&gt;</span>
+            <span class="card__image-label stroke" aria-hidden="true"
+              >&lt;/HTML&gt;</span
+            >
             <img
               class="card__image"
               src="./images/car.jpg"
               alt="Картинка с фургоном в пиксельной стилистике"
+              loading="lazy"
             />
           </div>
           <div class="card__description">
@@ -59,10 +62,7 @@
             </p>
           </div>
           <div class="card__controls">
-            <button
-              type="button"
-              class="card__icon-button"
-            >
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -103,9 +103,11 @@
         <article class="card page-size">
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
           <div class="card__image-container">
-            <span class="card__image-label stroke">&lt;/HTML&gt;</span>
+            <span class="card__image-label stroke" aria-hidden="true"
+              >&lt;/HTML&gt;</span
+            >
             <img
-              class="card__image sepia-image"
+              class="card__image filter-sepia"
               src="./images/car.jpg"
               alt="Картинка с фургоном в пиксельной стилистике"
               loading="lazy"
@@ -125,10 +127,7 @@
             </p>
           </div>
           <div class="card__controls">
-            <button
-              type="button"
-              class="card__icon-button"
-            >
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -169,9 +168,11 @@
         <article class="card page-size">
           <h2 class="card__title">1 спринт: А если не получится?</h2>
           <div class="card__image-container">
-            <span class="card__image-label stroke">&lt;CSS&gt;</span>
+            <span class="card__image-label stroke" aria-hidden="true"
+              >&lt;CSS&gt;</span
+            >
             <img
-              class="card__image saturate-image"
+              class="card__image filter-saturate"
               src="./images/car.jpg"
               alt="Картинка с фургоном в пиксельной стилистике"
               loading="lazy"
@@ -190,10 +191,7 @@
             </p>
           </div>
           <div class="card__controls">
-            <button
-              type="button"
-              class="card__icon-button"
-            >
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -234,9 +232,11 @@
         <article class="card page-size">
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
           <div class="card__image-container">
-            <span class="card__image-label stroke">&lt;desigions&gt;</span>
+            <span class="card__image-label stroke" aria-hidden="true"
+              >&lt;desigions&gt;</span
+            >
             <img
-              class="card__image grayscale-image"
+              class="card__image filter-grayscale"
               src="./images/car.jpg"
               alt="Картинка с фургоном в пиксельной стилистике"
               loading="lazy"
@@ -258,10 +258,7 @@
             </p>
           </div>
           <div class="card__controls">
-            <button
-              type="button"
-              class="card__icon-button"
-            >
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -302,9 +299,11 @@
         <article class="card page-size">
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
           <div class="card__image-container">
-            <span class="card__image-label stroke">care</span>
+            <span class="card__image-label stroke" aria-hidden="true"
+              >care</span
+            >
             <img
-              class="card__image invert-image"
+              class="card__image filter-invert"
               src="./images/car.jpg"
               alt="Картинка с фургоном в пиксельной стилистике"
               loading="lazy"
@@ -326,10 +325,7 @@
             </p>
           </div>
           <div class="card__controls">
-            <button
-              type="button"
-              class="card__icon-button"
-            >
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -370,9 +366,11 @@
         <article class="card page-size">
           <h2 class="card__title">3 спринт: Обходные стратегии</h2>
           <div class="card__image-container">
-            <span class="card__image-label stroke">&lt;support&gt;</span>
+            <span class="card__image-label stroke" aria-hidden="true"
+              >&lt;support&gt;</span
+            >
             <img
-              class="card__image blur-image"
+              class="card__image filter-blur"
               src="./images/car.jpg"
               alt="Картинка с фургоном в пиксельной стилистике"
               loading="lazy"
@@ -391,10 +389,7 @@
             </p>
           </div>
           <div class="card__controls">
-            <button
-              type="button"
-              class="card__icon-button"
-            >
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -435,11 +430,11 @@
         <article class="card page-size">
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
           <div class="card__image-container">
-            <span class="card__image-label stroke"
+            <span class="card__image-label stroke" aria-hidden="true"
               >&lt;lifes-style: none;&gt;</span
             >
             <img
-              class="card__image contrast-image"
+              class="card__image filter-contrast"
               src="./images/car.jpg"
               alt="Картинка с фургоном в пиксельной стилистике"
               loading="lazy"
@@ -462,10 +457,7 @@
             </p>
           </div>
           <div class="card__controls">
-            <button
-              type="button"
-              class="card__icon-button"
-            >
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -506,9 +498,11 @@
         <article class="card page-size">
           <h2 class="card__title">«Сейчас я здесь»</h2>
           <div class="card__image-container">
-            <span class="card__image-label stroke">&lt;experience&gt;</span>
+            <span class="card__image-label stroke" aria-hidden="true"
+              >&lt;experience&gt;</span
+            >
             <img
-              class="card__image multiple-image"
+              class="card__image filter-multiple"
               src="./images/car.jpg"
               alt="Картинка с фургоном в пиксельной стилистике"
               loading="lazy"
@@ -530,10 +524,7 @@
             </p>
           </div>
           <div class="card__controls">
-            <button
-              type="button"
-              class="card__icon-button"
-            >
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -574,11 +565,15 @@
       </section>
       <button
         type="button"
-        class="button button_type_save"
+        class="button button__type-save"
         onclick="window['floppy-dialog'].showModal()"
         aria-controls="floppy-dialog"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+        <svg
+          class="button__save-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 39 39"
+        >
           <use href="./svg/save.svg#save-icon"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
@@ -595,7 +590,11 @@
           <p class="popup-text">Вставьте дискету, чтобы продолжить</p>
         </div>
         <form class="popup__form">
-          <button type="submit" class="button popup-button">
+          <button
+            type="button"
+            onclick="window['floppy-dialog'].close()"
+            class="button popup-button"
+          >
             <span class="button__text"> ОК </span>
           </button>
         </form>
