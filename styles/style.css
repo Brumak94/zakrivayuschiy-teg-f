@@ -135,7 +135,7 @@
   filter: contrast(20%);
 }
 
-.dilter-invert {
+.filter-invert {
   filter: invert(0.9);
 }
 
